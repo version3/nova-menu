@@ -1,0 +1,47 @@
+{
+    "name": "version3/nova-menu",
+    "description": "A menu package for nova",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "homepage": "https://github.com/version3/nova-menu",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom Hatzer",
+            "email": "connect@v3.to",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/nova": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.6",
+        "phpunit/phpunit": "7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Version3\\NovaMenu\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Version3\\NovaMenu\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Version3\\NovaMenu\\NovaMenuServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
